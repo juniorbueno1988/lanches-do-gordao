@@ -1,0 +1,274 @@
+/* Reset básico: remove margens/paddings padrão e define box-sizing */
+* {
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove padding padrão */
+  box-sizing: border-box; /* Faz o padding e border entrarem no cálculo da largura/altura */
+}
+
+/* Faz com que html e body ocupem 100% da altura da tela */
+html,
+body {
+  height: 100%; /* Define altura total da tela para html e body */
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define fonte principal */
+  background-image: url(img/background.jpg); /* Define imagem de fundo */
+  background-repeat: no-repeat; /* Não repete a imagem de fundo */
+  background-size: cover; /* Cobre toda a área do fundo */
+  background-position: center center; /* Centraliza a imagem de fundo */
+  color: black; /* Define cor do texto */
+  line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Header (cabeçalho) da página */
+header {
+  background-color: red; /* Fundo vermelho para o cabeçalho */
+  color: white; /* Cor do texto branco */
+  padding: 1rem 2rem; /* Espaço interno (topo/baixo 1rem, lados 2rem) */
+  display: flex; /* Usa flexbox para layout flexível */
+  justify-content: space-between; /* Espaço máximo entre os itens dentro do header */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+/* Container para alinhar logo e título lado a lado */
+.logo-titulo {
+  display: flex; /* Flexbox para itens em linha */
+  align-items: center; /* Alinha verticalmente ao centro */
+  gap: 0.5rem; /* Espaço entre logo e título */
+}
+
+/* Ajusta tamanho da imagem do logo para ficar igual ao título */
+.logo-titulo .logo {
+  height: 3rem; /* Altura da imagem do logo igual ao tamanho do texto */
+  width: auto; /* Ajusta largura automaticamente mantendo proporção */
+  border-radius: 5px; /* Cantos arredondados da imagem */
+}
+
+/* Título dentro do header */
+header h1 {
+  font-size: 1.8rem; /* Tamanho do título */
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  display: flex; /* Itens da lista em linha */
+  gap: 2rem; /* Espaço entre os itens do menu */
+}
+
+/* Estilo dos links do menu */
+nav a {
+  color: white; /* Cor branca para os links */
+  text-decoration: none; /* Remove sublinhado dos links */
+  font-weight: bold; /* Texto em negrito */
+  transition: color 0.3s ease; /* Transição suave da cor ao mudar */
+}
+
+/* Cor do link ao passar o mouse */
+nav a:hover {
+  color: #ffd1c1; /* Cor clara ao passar o mouse */
+}
+
+/* Estilo das seções gerais (menu, cadastro, sobre, pizzas, hambúrgueres) */
+section {
+  max-width: 900px; /* Largura máxima da seção */
+  margin: 2rem auto; /* Margem vertical 2rem, centralizado horizontalmente */
+  padding: 1.5rem; /* Espaçamento interno */
+  background-color: yellow; /* Fundo amarelo */
+  border-radius: 6px; /* Cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Títulos das seções */
+section h2 {
+  color: red; /* Cor vermelha para o título */
+  margin-bottom: 0.8rem; /* Espaço abaixo do título */
+}
+
+/* Galeria de produtos (ex: pizzas e hambúrgueres) */
+.produtos {
+  display: flex; /* Itens em linha */
+  gap: 1rem; /* Espaço entre os itens */
+  justify-content: center; /* Centraliza os itens na linha */
+}
+
+/* Remove margem padrão do figure dentro da galeria */
+.produtos figure {
+  margin: 0; /* Remove margem padrão */
+  text-align: center; /* Centraliza o conteúdo do figure */
+}
+
+/* Imagens dos produtos */
+.produtos img {
+  max-width: 150px; /* Define largura máxima */
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Página do menu com footer fixado no final */
+.menu-page {
+  min-height: 100vh; /* Altura mínima igual a altura da tela */
+  display: flex; /* Flexbox para layout flexível */
+  flex-direction: column; /* Itens em coluna */
+}
+
+/* Footer empurrado para o final da página */
+.menu-page footer {
+  margin-top: auto; /* Espaço automático para empurrar footer para baixo */
+}
+
+/* Estilos de formulário: rótulos */
+label {
+  flex-basis: 100%; /* Ocupa linha inteira */
+  font-weight: 100; /* Peso leve para o texto */
+  margin-bottom: 0.1rem; /* Pequeno espaço abaixo do label */
+}
+
+/* Campos de input */
+input {
+  padding: 8px 10px; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  border: 1.5px solid #ccc; /* Borda cinza clara */
+  border-radius: 5px; /* Cantos arredondados */
+  width: 100%; /* Ocupa toda largura disponível */
+  max-width: 100%; /* Limita para não ultrapassar container */
+}
+
+/* Inputs que ocupam metade da linha */
+#rua,
+#cidade,
+#cep,
+#cartao {
+  flex-basis: calc(50% - 1rem); /* Metade da linha menos espaço para gap */
+}
+
+/* Campo com largura fixa */
+#numero {
+  flex-basis: 100px; /* Largura fixa de 100px */
+}
+
+/* Inputs que ocupam linha inteira */
+#telefone,
+#email,
+#nome {
+  flex-basis: 100%; /* Linha inteira */
+}
+
+/* Botão principal */
+button {
+  margin-top: 1.5rem; /* Espaço acima do botão */
+  width: 100%; /* Ocupa toda largura */
+  padding: 12px; /* Espaço interno */
+  font-size: 1.1rem; /* Tamanho do texto */
+  font-weight: 700; /* Negrito */
+  cursor: pointer; /* Cursor muda ao passar */
+  border-radius: 6px; /* Cantos arredondados */
+  border: none; /* Sem borda */
+}
+
+/* Link dentro do botão */
+button a {
+  color: red; /* Cor do link dentro do botão */
+  text-decoration: none; /* Sem sublinhado */
+  display: block; /* Ocupa todo espaço do botão */
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+}
+
+/* Container da área de pagamento */
+.pagamento {
+  width: 900px; /* Largura fixa */
+  height: auto; /* Altura automática */
+  margin: 100px auto; /* Margem vertical grande e centraliza */
+  display: block; /* Display padrão */
+}
+
+/* Seção de redes sociais */
+#redes-sociais {
+  max-width: 900px; /* Largura máxima */
+  margin: 1rem auto 3rem; /* Margens: topo 1rem, auto horizontal, base 3rem */
+  padding: 1rem 1.5rem; /* Espaçamento interno */
+  background-color: yellow; /* Fundo amarelo */
+  border-radius: 6px; /* Cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  text-align: center; /* Centraliza texto */
+  color: red; /* Cor vermelha */
+}
+
+/* Título das redes sociais */
+#redes-sociais h3 {
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  font-weight: 700; /* Negrito */
+}
+
+/* Container dos ícones sociais */
+#redes-sociais .social-icons {
+  display: flex; /* Flexbox para ícones em linha */
+  justify-content: center; /* Centraliza os ícones */
+  gap: 2rem; /* Espaço entre os ícones */
+}
+
+/* Estilo dos ícones SVG */
+#redes-sociais .social-icons a svg {
+  fill: red; /* Cor vermelha dos ícones */
+  width: 36px; /* Largura dos ícones */
+  height: 36px; /* Altura dos ícones */
+  transition: fill 0.3s ease; /* Transição suave da cor */
+  cursor: pointer; /* Cursor de mãozinha */
+}
+
+/* Cor dos ícones ao passar o mouse */
+#redes-sociais .social-icons a:hover svg {
+  fill: #ffd1c1; /* Cor clara ao passar o mouse */
+}
+
+/* Estilo iframe do mapa */
+section#mapa iframe {
+  width: 500px; /* Largura fixa */
+  height: 250px; /* Altura fixa */
+  border: 0; /* Remove borda */
+}
+
+/* Botão de ação em produtos */
+.botao-produto {
+  display: inline-block; /* Exibe como bloco em linha */
+  margin-top: 0.5rem; /* Espaço acima */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  background-color: red; /* Fundo vermelho */
+  color: white; /* Texto branco */
+  text-decoration: none; /* Remove sublinhado */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Cantos arredondados */
+  font-weight: bold; /* Negrito */
+  transition: background-color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Hover do botão de produto */
+.botao-produto:hover {
+  background-color: #cc0000; /* Fundo vermelho mais escuro */
+  cursor: pointer; /* Cursor de mãozinha */
+}
+
+/* Rodapé da página */
+footer {
+  background-color: red; /* Fundo vermelho */
+  color: white; /* Texto branco */
+  text-align: center; /* Texto centralizado */
+  padding: 1rem 0; /* Espaçamento vertical */
+  font-size: 0.9rem; /* Tamanho da fonte */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column; /* Cabeçalho em coluna */
+    text-align: center; /* Centraliza texto */
+    gap: 1rem; /* Espaço entre itens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Menu em coluna */
+    gap: 1rem; /* Espaço entre links */
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Declara que o documento está usando HTML5 -->
+
+<html lang="pt-br">
+<!-- Define o idioma do conteúdo como português brasileiro -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Define a codificação de caracteres como UTF-8 (compatível com acentos e caracteres especiais) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Garante que a página seja responsiva em dispositivos móveis -->
+
+  <title>Menu</title>
+  <!-- Título da aba do navegador -->
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Importa o arquivo CSS externo com os estilos da página -->
+</head>
+
+<body class="menu-page">
+  <!-- Início do corpo do site. A classe "menu-page" é usada para estilização específica desta página -->
+
+  <header>
+    <!-- Contêiner para alinhar o logo e o título lado a lado -->
+    <div class="logo-titulo">
+      <!-- Logo do Gordão ao lado esquerdo do título, tamanho ajustado pela altura via CSS -->
+      <img src="img/gordao.jpg" alt="Logo Gordão" class="logo" />
+      <h1>Lanches do Gordão</h1>
+    </div>
+    <nav>
+      <!-- Menu de navegação principal -->
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <!-- Link para a página inicial -->
+
+        <li><a href="menu.html">Cardápio</a></li>
+        <!-- Link para o cardápio de produtos -->
+
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <!-- Link para a página de cadastro -->
+
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <!-- Link para a página de informações da empresa -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Conteúdo principal da página -->
+
+    <section id="pizzas">
+      <!-- Seção com produtos do tipo pizza -->
+      <h2>Pizzas</h2>
+
+      <div class="produtos">
+        <!-- Container para a galeria de produtos -->
+
+        <figure>
+          <!-- Produto 1 -->
+          <img src="img/calabresa.jpeg" alt="Pizza Calabresa" />
+          <figcaption>
+            <!-- Botão de compra levando ao cadastro -->
+            <a href="cadastro.html" class="botao-produto">Calabresa - R$19,77</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <!-- Produto 2 -->
+          <img src="img/california.jpeg" alt="Pizza California" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">Segunda melhor - R$18,84</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <!-- Produto 3 -->
+          <img src="img/romanesca.jpeg" alt="Pizza Romanesca" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">De tudo - R$17,93</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <!-- Produto 4 -->
+          <img src="img/pizzaiolo.jpeg" alt="Pizza pizzaiolo" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">Magrela - R$20,06</a>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section id="hamburgueres">
+      <!-- Seção com produtos do tipo hambúrguer -->
+      <h2>Hambúrgueres</h2>
+
+      <div class="produtos">
+        <!-- Container para os hambúrgueres -->
+
+        <figure>
+          <!-- Produto 1 -->
+          <img src="img/tudo.jpeg" alt="Hambúrguer X-Tudo" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">Podrão - R$11,83</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <!-- Produto 2 -->
+          <img src="img/bacon.jpeg" alt="Hambúrguer X-Bacon" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">Morte lenta - R$13,12</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <!-- Produto 3 -->
+          <img src="img/egg.jpeg" alt="Hambúrguer X-Egg" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">Infarto - R$12,66</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <!-- Produto 4 -->
+          <img src="img/salada.jpeg" alt="Hambúrguer X-Salada" />
+          <figcaption>
+            <a href="cadastro.html" class="botao-produto">Colesterol - R$10,09</a>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- Rodapé do site -->
+    <p>© 2025 Lanches do Gordão. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
