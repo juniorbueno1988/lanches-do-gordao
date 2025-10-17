@@ -31,7 +31,6 @@ O projeto cumpre os requisitos solicitados para a prova da seguinte forma:
 | Interface (UI) organizada e responsiva      | ✅ Concluído                                |
 | Experiência (UX) clara e funcional          | ✅ Concluído                                |
 | Código organizado e comentado               | ✅ Concluído                                |
-| Projeto versionado no GitHub                | ✔ (Lembre-se de manter commits organizados) |
 
 ---
 
